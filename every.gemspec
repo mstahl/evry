@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["max thom stahl"]
   s.date = "2012-10-13"
-  s.description = "TODO: longer description of your gem"
+  s.description = "A super-simple command for running other commands periodically, at set intervals."
   s.email = "max@villainousindustries.com"
   s.executables = ["every"]
   s.extra_rdoc_files = [
@@ -26,6 +26,7 @@ Gem::Specification.new do |s|
     "Rakefile",
     "VERSION",
     "bin/every",
+    "every.gemspec",
     "lib/every.rb",
     "test/helper.rb",
     "test/test_every.rb"
@@ -34,7 +35,7 @@ Gem::Specification.new do |s|
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = "1.8.24"
-  s.summary = "TODO: one-line summary of your gem"
+  s.summary = "A super-simple command for running other commands periodically, at set intervals."
 
   if s.respond_to? :specification_version then
     s.specification_version = 3
