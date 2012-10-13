@@ -13,7 +13,7 @@ options = Getopt::Std.getopts("cs")
 args = ARGV.join ' '
 
 unless args =~ /([0-9]+)\s*(m|min|h|hr|hrs|s|sec)?\s+(.*)/
-  puts(USAGE)
+  puts USAGE
   exit
 end
 
