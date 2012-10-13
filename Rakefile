@@ -15,7 +15,7 @@ require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
   gem.name = "evry"
-  gem.homepage = "http://github.com/mstahl/every"
+  gem.homepage = "http://github.com/mstahl/evry"
   gem.license = "MIT"
   gem.summary = %Q{A super-simple command for running other commands periodically, at set intervals.}
   gem.description = %Q{A super-simple command for running other commands periodically, at set intervals.}
