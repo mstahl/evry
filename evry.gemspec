@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.date = "2012-10-13"
   s.description = "A super-simple command for running other commands periodically, at set intervals."
   s.email = "max@villainousindustries.com"
-  s.executables = ["every"]
+  s.executables = ["evry"]
   s.extra_rdoc_files = [
     "LICENSE.txt",
     "README.md"
@@ -25,11 +25,12 @@ Gem::Specification.new do |s|
     "README.md",
     "Rakefile",
     "VERSION",
-    "bin/every",
+    "bin/evry",
     "every.gemspec",
-    "lib/every.rb",
+    "evry.gemspec",
+    "lib/evry.rb",
     "test/helper.rb",
-    "test/test_every.rb"
+    "test/test_evry.rb"
   ]
   s.homepage = "http://github.com/mstahl/every"
   s.licenses = ["MIT"]
