@@ -1,4 +1,4 @@
-# every
+# evry
 
 A really simple command for running a command periodically, at set intervals.
 
@@ -6,15 +6,15 @@ A really simple command for running a command periodically, at set intervals.
 
 Install with `gem`...
 
-    gem install git@github.com:mstahl/every.git
+    gem install evry
 
 ...or throw it into your Gemfile, thusly...
 
-    gem 'every', git: "git@github.com:mstahl/every.git"
+    gem 'evry'
 
 ## Usage
 
-    every [options] [time](s|sec|secs|m|min|h|hr|hrs) [command]
+    evry [options] [time](s|sec|secs|m|min|h|hr|hrs) [command]
 
 ## Allowed options
 
@@ -22,13 +22,13 @@ Install with `gem`...
 
 ## Example
 
-    + [23:06:45](max@lola)(~)$ ~> every 13s date
+    + [23:06:45](max@lola)(~)$ ~> evry 13s date
     Fri Oct 12 23:06:58 CDT 2012
     Fri Oct 12 23:07:11 CDT 2012
     Fri Oct 12 23:07:24 CDT 2012
     Fri Oct 12 23:07:37 CDT 2012
 
-## Contributing to every
+## Contributing to evry
  
   * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet.
   * Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it.
