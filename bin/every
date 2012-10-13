@@ -1,0 +1,41 @@
+#!/usr/bin/env ruby -wKU
+
+require 'getopt/std'
+
+USAGE = %{
+USAGE: #{$0} [options] [time](s|sec|secs|m|min|h|hr|hrs) [command]
+Allowable options:
+  -c : Clear screen before running command each time
+}
+
+options = Getopt::Std.getopts("cs")
+
+args = ARGV.join ' '
+
+unless args =~ /([0-9]+)\s*(m|min|h|hr|hrs|s|sec)?\s+(.*)/
+  puts(USAGE)
+  exit
+end
+
+# Parse the rest of the arguments
+interval_time = $1.to_i
+interval_unit = $2 or 's'
+command       = $3
+
+# Get seconds from interval and units
+case interval_unit
+when 'm','min'
+  interval_time *= 60
+when 'h','hr','hrs'
+  interval_time *= 3600
+end
+
+begin
+  while true do
+    system('clear') if options['c']
+    system command
+    sleep interval_time
+  end
+rescue Interrupt
+  puts ''
+end
