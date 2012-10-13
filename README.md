@@ -2,7 +2,17 @@
 
 A really simple command for running a command periodically, at set intervals.
 
-## Usage:
+## Install
+
+Install with `gem`...
+
+    gem install git@github.com:mstahl/every.git
+
+...or throw it into your Gemfile, thusly...
+
+    gem 'every', git: "git@github.com:mstahl/every.git"
+
+## Usage
 
     every [options] [time](s|sec|secs|m|min|h|hr|hrs) [command]
 
